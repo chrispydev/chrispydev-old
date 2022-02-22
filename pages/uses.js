@@ -1,24 +1,65 @@
 import Heading from '../components/Heading';
+import HighlightText from '../components/HighlightText';
 
 export default function uses() {
   return (
-    <main className='max-w-[80%]'>
+    <main className='lg:max-w-[80%] mx-auto p-2'>
       <div className='p-4'>
-        <Heading headingText='Uses' />
+        <div className='h-[450px] md:h-[400px] lg:h-[500px] w-full'>
+          <img
+            className='object-cover object-center w-full h-full'
+            src='/images/uses/banner.jpg'
+            alt='user-banner'
+          />
+        </div>
+        <div className='mt-7'>
+          <Heading center={false} headingText='Uses' />
+          <div className='font-lobsterTwo text-gray-700 flex justify-start items-center space-x-12 mt-3'>
+            <p className='text-lg '>December 12, 2019</p>
+            <p>Other</p>
+          </div>
 
-        <div className='container mt-[3rem]'>
-          <p className='text-left leading-8'>
-            Make sure to check out [uses.tech]{' '}
-            <small className='text-primary'>(https://uses.tech)</small> for a
-            list of everyone's /uses pages! Everyday I get a few emails asking
-            about the specifics of some piece of software or hardware I use. I
-            change up things fairly often, so this page will serve as a living
-            document and a place to point curious developers to when I get
-            asked. If there is something missing shoot me a tweet{' '}
-            <a href='https://twitter.com/wesbos'>@wesbos</a> and I'll add it.
-            Most of these links are amazon affiliate links, so I'll get philthy
-            rich if you click them and buy something.
-          </p>
+          <div className='flex flex-col space-y-3 font-light italic text-[0.9rem]'>
+            <p>
+              I have getting question about what I use for coding, apps I use
+              and so much.
+            </p>
+            <p>
+              I mostly change my settings to fit my current work depending on
+              what I am doing. If if I am creating a website or creating a
+              mobile app or even web scrapping.
+            </p>
+            <p>
+              And if you have something you want to know just let me know{' '}
+              <a href='mailto:chrispydev.owusu@gmail.com'>
+                <HighlightText highlightText='chrispydev.owusu@gmail.com' />
+              </a>
+            </p>
+          </div>
+          <div className='mt-8'>
+            <div>
+              <Heading center={false} headingText='Machine & OS' />
+
+              <div className='flex flex-col space-y-3 font-light italic text-[0.9rem]'>
+                <p>
+                  My machine of choice is{' '}
+                  <HighlightText highlightText='Dell Latitude E7240 00.' />{' '}
+                  Which runs on a ubuntu Ubuntu 20.04.4 LTS x86_64 since I am a
+                  linux user. I prefer linux or unix over windows because of
+                  some past experience with windows.
+                </p>
+                <p>
+                  I also started using garuda linux which is arch based linux
+                  and awesome for coding and gaming.
+                  <a href='https://garudalinux.org/'>
+                    <HighlightText highlightText='Garuda Linux  .' />{' '}
+                  </a>
+                  Plus you get any application you want to install and there is
+                  nothing like bloatware
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

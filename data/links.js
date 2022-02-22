@@ -15,8 +15,8 @@ export const links = [
     name: 'Contact',
     location: '/#contactMe',
   },
-  // {
-  //   name: 'Uses',
-  //   location: '/uses',
-  // },
+  {
+    name: 'Uses',
+    location: '/uses',
+  },
 ];

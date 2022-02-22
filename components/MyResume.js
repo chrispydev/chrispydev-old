@@ -8,7 +8,7 @@ export default function MyResume() {
 
   return (
     <section className='mt-16'>
-      <Heading headingText='My Resume' />
+      <Heading center={true} headingText='My Resume' />
       <div className='mt-10 grid grid-cols-1 md:grid-cols-2 gap-4 px-6 lg:px-10'>
         <div>
           {resume.map((resume, index) => (

@@ -53,7 +53,7 @@ export default function Header() {
           </div>
         </div>
         {/* <ul className='flex-1 flex pt-2 md:pt-0 lg:justify-end justify-center items-center flex-wrap space-x-3 md:space-x-10 text-sm md:text-2xl font-bold capitalize'> */}
-        <ul className='flex-1 flex pt-2 md:pt-0 lg:justify-end justify-center items-center flex-wrap space-x-1 md:space-x-10 text-sm md:text-2xl font-bold capitalize'>
+        <ul className='flex-1 flex pt-2 md:pt-0 lg:justify-end justify-center items-center flex-wrap space-x-1 md:space-x-10 text-md md:text-2xl font-bold capitalize'>
           {links.map(({ name, location }, index) => (
             <div key={index}>
               <NavLink name={name} location={location} />

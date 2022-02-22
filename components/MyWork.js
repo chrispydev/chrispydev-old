@@ -7,7 +7,7 @@ import PortfolioCard from './PortfolioCard';
 export default function MyWork() {
   return (
     <section className='mt-16' id='projects'>
-      <Heading headingText='My Projects' />
+      <Heading center={true} headingText='My Projects' />
       <div className='mt-10 px-8'>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5'>
           {portfolio.map(

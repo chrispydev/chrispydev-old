@@ -4,7 +4,7 @@ import Heading from './Heading';
 export default function ContactMe() {
   return (
     <section className='mt-16' id='contactMe'>
-      <Heading headingText='Get In Touch' />
+      <Heading center={true} headingText='Get In Touch' />
       <div className='grid grid-cols-12 mt-10'>
         <div className='md:col-span-5 col-span-12 text-left mt-10 md:p-10 p-5 bg-primary text-white font-light leading-7 space-y-8'>
           <h1 className='text-2xl font-medium'>Contact Information</h1>
