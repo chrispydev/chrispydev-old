@@ -9,7 +9,7 @@ export default function ContactMe() {
         <div className='md:col-span-5 col-span-12 text-left mt-10 md:p-10 p-5 bg-primary text-white font-light leading-7 space-y-8'>
           <h1 className='text-2xl font-medium'>Contact Information</h1>
           <p className='text-sm'>
-            I have four years of experience in the field of web and mobile
+            I have over four years of experience in the field of web and mobile
             application development. I am currently available for freelance
             work.
           </p>
