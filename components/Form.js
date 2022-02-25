@@ -49,7 +49,7 @@ export default function Form() {
           alert(
             'took too long to send check internet connection and resend message'
           );
-        }, 10000);
+        }, 8000);
       }
     } catch (error) {
       setShow(false);
@@ -82,6 +82,7 @@ export default function Form() {
                   onChange={(e) => {
                     setFirstName(e.target.value);
                   }}
+                  required
                   value={firstName}
                   type='text'
                   name='first-name'
@@ -102,6 +103,7 @@ export default function Form() {
                   onChange={(e) => {
                     setLastName(e.target.value);
                   }}
+                  required
                   value={lastName}
                   type='text'
                   name='last-name'
@@ -122,6 +124,7 @@ export default function Form() {
                   onChange={(e) => {
                     setEmail(e.target.value);
                   }}
+                  required
                   value={email}
                   type='email'
                   name='email-address'
@@ -149,6 +152,7 @@ export default function Form() {
                   onChange={(e) => {
                     setPhoneNumber(e.target.value);
                   }}
+                  required
                   value={phoneNumber}
                   type='tel'
                   name='subject'
@@ -168,6 +172,7 @@ export default function Form() {
                   onChange={(e) => {
                     setSubject(e.target.value);
                   }}
+                  required
                   value={subject}
                   type='text'
                   name='subject'
@@ -199,8 +204,7 @@ export default function Form() {
                 firstName.length === 0 &&
                 lastName.length === 0 &&
                 email.length === 0 &&
-                subject.length === 0 &&
-                message.length === 0
+                subject.length === 0
                   ? true
                   : false
               }

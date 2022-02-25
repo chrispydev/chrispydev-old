@@ -72,7 +72,56 @@ export default function uses() {
                 you are doing whether it is Web, Mobile, AI or even Data
                 Science.
               </li>
+              <li>
+                For terminal I
+                <a href='https://hyper.is/'>
+                  <HighlightText highlightText='HyperTerminal .' />
+                </a>
+                Which is great and boost productivity. I get this immediately
+                when I install a new OS.
+              </li>
+              <li>
+                <a href='https://developer.android.com/studio/intro'>
+                  <HighlightText highlightText='Android Studio Code .' />
+                </a>
+                As everyone know this is used for building app. I use this
+                mainly for flutter applications. I thank God that flutter is so
+                popular and that I can use it for church projects.
+              </li>
+              <li>
+                I also use{' '}
+                <a href='https://albertlauncher.github.io/installing/'>
+                  <HighlightText highlightText='Albert Search' />
+                </a>
+                for searching apps and on the web and sometimes use it for
+                calculations.
+              </li>
+              <li>
+                My browser of choice is{' '}
+                <a href='https://www.google.com/chrome/?brand=BNSD&gclid=Cj0KCQiAmeKQBhDvARIsAHJ7mF4Gde837R05zmnze00ChHTZ9gKEkYSP3SPhPc0Igt-hWueYVAqYET0aAnaZEALw_wcB&gclsrc=aw.ds'>
+                  <HighlightText highlightText=' google chrome' />
+                </a>{' '}
+                and{' '}
+                <a href='https://www.mozilla.org/en-US/firefox/new/'>
+                  <HighlightText highlightText='firefox .' />
+                </a>
+                They all have their own props👍 and cons👎 in terms of
+                developments. One can do things better than other so I keep
+                these two all the time.
+              </li>
+              <li>
+                <a href='https://discord.com/'>
+                  <HighlightText highlightText='Discord' />
+                </a>{' '}
+                app is my way of keeping up to date with the community I am
+                connected to.
+              </li>
             </ul>
+            {/* <Heading center={false} headingText='Hosting Service' />
+            <ul className='uses-container'>
+              <li>
+              </li>
+            </ul> */}
           </div>
         </div>
       </div>
