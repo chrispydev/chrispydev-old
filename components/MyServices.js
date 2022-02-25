@@ -4,7 +4,9 @@ import ServiceCard from './ServiceCard';
 export default function MyServices() {
   return (
     <section className='mt-16 px-6 lg:px-16' id='services'>
-      <Heading center={true} headingText='What I offer' />
+      <div className='w-full flex justify-center items-center'>
+        <Heading headingText='What I offer' />
+      </div>
       <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4'>
         <ServiceCard
           icon={

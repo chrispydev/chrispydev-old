@@ -16,7 +16,9 @@ export default function uses() {
           alt='user-banner'
         />
         <div className='mt-7'>
-          <Heading center={false} headingText='Uses' />
+          <div className='w-full flex justify-start items-center'>
+            <Heading headingText='Uses' />
+          </div>
           <div className='font-lobsterTwo text-gray-700 flex justify-start items-center space-x-12 mt-3'>
             <p className='text-lg '>December 12, 2019</p>
             <p>Other</p>
@@ -40,7 +42,9 @@ export default function uses() {
             </li>
           </ul>
           <div className='mt-8'>
-            <Heading center={false} headingText='Machine & OS' />
+            <div className='w-full flex justify-start items-center'>
+              <Heading headingText='Machine & OS' />
+            </div>
             <ul className='uses-container'>
               <li>
                 My machine of choice is{' '}
@@ -60,7 +64,9 @@ export default function uses() {
                 other operating systems.
               </li>
             </ul>
-            <Heading center={false} headingText='Desktop App' />
+            <div className='w-full flex justify-start items-center'>
+              <Heading headingText='Desktop App' />
+            </div>
             <ul className='uses-container'>
               <li>
                 <a href='https://code.visualstudio.com/'>
@@ -117,7 +123,7 @@ export default function uses() {
                 connected to.
               </li>
             </ul>
-            {/* <Heading center={false} headingText='Hosting Service' />
+            {/* <Heading headingText='Hosting Service' />
             <ul className='uses-container'>
               <li>
               </li>

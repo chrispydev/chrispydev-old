@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "next -p 7777",
+    "dev": "next -p 7771",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
