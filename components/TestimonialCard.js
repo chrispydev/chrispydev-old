@@ -34,7 +34,7 @@ export default function TestimonialCard({
       </div>
       <div className='space-y-4 text-left text-primary'>
         <h2 className=' font-semibold'>{ratingWord}</h2>
-        <p className='transition text-sm hover:line-clamp-none line-clamp-6'>
+        <p className='transition text-sm hover:line-clamp-none line-clamp-3'>
           {testimony}
         </p>
       </div>
