@@ -1,22 +1,26 @@
 export const links = [
   {
-    name: 'About',
-    location: '/#about',
+    name: "About",
+    location: "/#about",
   },
   {
-    name: 'Projects',
-    location: '/#projects',
+    name: "Projects",
+    location: "/#projects",
   },
   {
-    name: 'Services',
-    location: '/#services',
+    name: "Services",
+    location: "/#services",
   },
   {
-    name: 'Contact',
-    location: '/#contactMe',
+    name: "Contact",
+    location: "/#contactMe",
   },
   {
-    name: 'Uses',
-    location: '/uses',
+    name: "Uses",
+    location: "/uses",
+  },
+  {
+    name: "Blog",
+    location: "/blog",
   },
 ];
