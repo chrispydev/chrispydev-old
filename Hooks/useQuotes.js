@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { quotes } from '../data/quotes';
+import { useState } from "react";
+import { quotes } from "../data/quotes";
 
 export default function useQuote() {
   const rIdx = Math.floor(Math.random() * quotes.length);
@@ -7,7 +7,7 @@ export default function useQuote() {
   let lastQuote;
 
   if (quote === lastQuote) {
-    console.log('Ah nah thats the same one bud');
+    console.log("This is the same quotes");
     setQuote(quote);
   }
   lastQuote = quote;

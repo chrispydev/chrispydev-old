@@ -128,7 +128,7 @@ export default function uses() {
             </div>
             <ul className="uses-container">
               <li>
-                <a href="#">
+                <a href="https://docs.github.com/en/pages/quickstart">
                   <HighlightText highlightText="Github Pages" />
                 </a>
                 Github pages is free and allows everyone to host their static
@@ -137,7 +137,7 @@ export default function uses() {
                 netlify.
               </li>
               <li>
-                <a href="">
+                <a href="https://www.netlify.com/">
                   <HighlightText highlightText="Netlify" />
                 </a>
                 is very popular when it comes to web hosting and free services
@@ -149,7 +149,7 @@ export default function uses() {
               {/* correct the spell of favorite */}
               <li>
                 My favorite web hosting services now is
-                <a href="">
+                <a href="https://vercel.com/">
                   <HighlightText highlightText="Vercel" />
                 </a>
                 and they are already configured for nextjs and its easy to use
