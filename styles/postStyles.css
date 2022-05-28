@@ -1,0 +1,44 @@
+.post-wrapper {
+  line-height: 2rem;
+  color: #222;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+@media (max-width: 480px) {
+  .post-wrapper {
+    font-size: 0.8rem;
+  }
+}
+
+.post-wrapper pre {
+  background-color: #212529;
+  color: #f1f1f1;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+.post-wrapper ul {
+  list-style-type: square;
+}
+
+.post-wrapper a {
+  background-color: #1aebff;
+  color: #000;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.post-wrapper p a {
+  background-color: #1aebff;
+  color: #000;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: underline;
+}

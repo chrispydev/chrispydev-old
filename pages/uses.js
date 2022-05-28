@@ -20,7 +20,7 @@ export default function uses() {
             <Heading headingText="Uses" />
           </div>
           <div className="font-lobsterTwo text-gray-700 flex justify-start items-center space-x-12 mt-3">
-            <p className="text-lg ">December 12, 2019</p>
+            <p className="text-lg">December 12, 2019</p>
             <p>Other</p>
           </div>
 
@@ -85,6 +85,13 @@ export default function uses() {
                 </a>
                 Which is great and boost productivity. I get this immediately
                 when I install a new OS.
+              </li>
+              <li>
+                <a href="https://github.com/alacritty/alacritty">
+                  <HighlightText highlightText="Alacrity ." />
+                </a>
+                The best terminal emulator for arch linux on my point of view.
+                It is a fast, cross-platform, OpenGL terminal emulator.
               </li>
               <li>
                 <a href="https://developer.android.com/studio/intro">

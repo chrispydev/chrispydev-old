@@ -19,8 +19,8 @@ export const links = [
     name: "Uses",
     location: "/uses",
   },
-  // {
-  //   name: "Blog",
-  //   location: "/blog",
-  // },
+  {
+    name: "Blog",
+    location: "/blog",
+  },
 ];

@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
-import Image from "next/image";
+//import Image from "next/image";
 import Heading from "../../components/Heading";
 
 export default function PostPage({
@@ -12,8 +12,8 @@ export default function PostPage({
 }) {
   return (
     <>
-      <main className="lg:max-w-[80%] mx-auto">
-        <div className="p-3 lg:p-4">
+      <main className="lg:max-w-[70%] mx-auto">
+        <div className="py-3 px-5 lg:p-4">
           {/* <Image
             height={550}
             width={600}
@@ -22,12 +22,14 @@ export default function PostPage({
             src={cover_image}
             alt={title}
           /> */}
-          <img
-            loading="lazy"
-            className="w-full h-[500px] object-fill object-center"
-            src={cover_image}
-            alt={title}
-          />
+          <div className="-mt-36 -mb-36 md:-mb-0 md:-mt-0">
+            <img
+              loading="lazy"
+              className="w-full h-[500px] object-contain"
+              src={cover_image}
+              alt={title}
+            />
+          </div>
           <div className="w-full flex justify-start items-center my-3">
             <Heading small headingText={title} />
           </div>
@@ -37,7 +39,7 @@ export default function PostPage({
           </small>
           <div className="post-body">
             <div
-              className="text-gray-700 text-sm font-light leading-9 tracking-normal"
+              className="post-wrapper"
               dangerouslySetInnerHTML={{ __html: marked(content) }}
             ></div>
           </div>
