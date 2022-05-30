@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { links } from "../data/links";
 import NavLink from "./NavLink";
-// import DKIMV from "nodemailer/lib/dkim";
+import DropDown from "./DropDown";
 
 export default function Header() {
   const [value, setValue] = useState("");
@@ -10,12 +10,32 @@ export default function Header() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
     window.onscroll = () => {
       setValue(
         window.document.documentElement.scrollTop || document.body.scrollTop
       );
     };
-  }, [value]);
+  }, [value, toggle]);
+
+  function setDark() {
+    if (localStorage.theme == "dark") {
+      localStorage.theme = "light";
+      setToggle(!toggle);
+    } else if ((localStorage.theme = "light")) {
+      localStorage.theme = "dark";
+      setToggle(!toggle);
+    }
+  }
 
   function topFunction() {
     document.body.scrollTop = 0; // For Safari
@@ -23,16 +43,16 @@ export default function Header() {
   }
 
   return (
-    <header className="md:sticky static top-0 left-0 z-20 w-full pt-2 md:pt-1 lg:pt-0 px-1 md:px-10 bg-primary text-secondary">
+    <header className="dark:bg-darker opacity-100 md:sticky static top-0 left-0 z-20 w-full pt-2 md:pt-1 lg:pt-0 px-1 md:px-10 bg-primary text-secondary">
       {value > 500 && (
         <>
           <div
             onClick={topFunction}
-            className="fixed right-[8%] bottom-[8%] z-50 bg-secondary rounded-full md:p-3 p-2 cursor-pointer"
+            className="fixed right-[8%] bottom-[8%] z-50 bg-secondary dark:bg-gray-500 rounded-full md:p-4 p-2 cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="text-primary h-6 w-6"
+              className="text-primary h-6 w-6 dark:text-white"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -48,8 +68,11 @@ export default function Header() {
         </>
       )}
       <nav className="flex flex-1 justify-between items-center p-2">
-        <div className="flex justify-center items-center">
-          <div className="text-center text-2xl tracking-wide font-extrabold uppercase max-w-min inline-block p-1 bg-secondary text-primary transform -skew-x-6 underline">
+        <div
+          onClick={() => setShow(false)}
+          className="flex justify-center items-center"
+        >
+          <div className="text-center text-xl tracking-wide font-extrabold uppercase max-w-min inline-block p-1 bg-secondary text-primary dark:bg-dark dark:text-white transform -skew-x-6 underline">
             <Link href="/">
               <a>Chrispydev</a>
             </Link>
@@ -63,18 +86,14 @@ export default function Header() {
           ))}
         </ul>
         <div className="flex justify-between items-center">
-          <label className="switch mr-4">
-            <input
-              type="checkbox"
-              checked={toggle}
-              onClick={() => setToggle(!toggle)}
-            />
+          <label className="switch mr-4 cursor-pointer">
+            <input type="checkbox" checked={toggle} onClick={() => setDark()} />
             <span class="slider round"></span>
           </label>
           <svg
             onClick={() => setShow(!show)}
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 block lg:hidden"
+            className="h-6 w-6 block lg:hidden cursor-pointer border-secondary border-2"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -88,6 +107,11 @@ export default function Header() {
           </svg>
         </div>
       </nav>
+      {show && (
+        <div className="absolute right-0 z-50 bg-primary px-5">
+          <DropDown setShow={() => setShow(false)} />
+        </div>
+      )}
     </header>
   );
 }

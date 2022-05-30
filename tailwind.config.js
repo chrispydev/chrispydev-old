@@ -1,14 +1,16 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  mode: "jit",
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        primary: '#193549',
-        secondary: '#1aebff',
-        darken: '#212529',
-        dark: '#111111;',
+        primary: "#193549",
+        secondary: "#1aebff",
+        darken: "#212529",
+        darkDarken: "#202023",
+        darker: "#202023",
+        dark: "#111111;",
       },
       fontFamily: {
         poppins: "'Poppins', sans-serif",
@@ -22,8 +24,8 @@ module.exports = {
       //   c610px: '610px',
       // },
       backgroundImage: {
-        'hero-image': "url('/images/hero.jpg')",
-        'resume-image': "url('/images/resume.jpg')",
+        "hero-image": "url('/images/hero.jpg')",
+        "resume-image": "url('/images/resume.jpg')",
       },
     },
   },
@@ -35,8 +37,8 @@ module.exports = {
     // },
   },
   plugins: [
-    require('tailwindcss-selection-variant'),
-    require('@tailwindcss/line-clamp'),
-    require('@tailwindcss/forms'),
+    require("tailwindcss-selection-variant"),
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/forms"),
   ],
 };

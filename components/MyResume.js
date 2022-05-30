@@ -7,7 +7,7 @@ export default function MyResume() {
   const quote = useQuote();
 
   return (
-    <section className="mt-16">
+    <section className="pt-16 dark:bg-darker">
       <div className="w-full flex justify-center items-center">
         <Heading headingText="My Resume" />
       </div>
@@ -23,7 +23,7 @@ export default function MyResume() {
           ))}
         </div>
         <div className="lg:mt-4 bg-resume-image bg-cover bg-no-repeat mb-4 ">
-          <div className="bg-black bg-opacity-75 h-full flex items-start justify-center flex-col space-y-4 p-5">
+          <div className="bg-black bg-opacity-75 dark:bg-darker dark:opacity-95 h-full flex items-start justify-center flex-col space-y-4 p-5">
             <p className="text-lg text-gray-300">{quote.quote}</p>
 
             <p className="text-white text-xl uppercase font-semibold tracking-wide">
