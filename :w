@@ -2,7 +2,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { links } from "../data/links";
 import NavLink from "./NavLink";
-// import DKIMV from "nodemailer/lib/dkim";
 
 export default function Header() {
   const [value, setValue] = useState("");
@@ -55,13 +54,15 @@ export default function Header() {
             </Link>
           </div>
         </div>
-        <ul className="transition-all flex pt-2 md:pt-0 lg:justify-end justify-center items-center flex-wrap space-x-1 md:space-x-10 text-md md:text-2xl font-bold capitalize">
-          {links.map(({ name, location }, index) => (
-            <div key={index} className="hidden lg:flex">
-              <NavLink name={name} location={location} />
-            </div>
-          ))}
-        </ul>
+        {show && (
+          <ul className="transition-all flex pt-2 md:pt-0 lg:justify-end justify-center items-center flex-wrap space-x-1 md:space-x-10 text-md md:text-2xl font-bold capitalize">
+            {links.map(({ name, location }, index) => (
+              <div key={index} className="hidden lg:flex">
+                <NavLink name={name} location={location} />
+              </div>
+            ))}
+          </ul>
+        )}
         <div className="flex justify-between items-center">
           <label className="switch mr-4">
             <input

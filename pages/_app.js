@@ -1,7 +1,8 @@
-import 'tailwindcss/tailwind.css';
-import '../styles/globals.css';
-import '../styles/postStyles.css';
-import Layout from '../components/Layout';
+import "tailwindcss/tailwind.css";
+import "../styles/globals.css";
+import "../styles/postStyles.css";
+import "../styles/toggleSwitch.css";
+import Layout from "../components/Layout";
 
 export default function MyApp({ Component, pageProps }) {
   return (
