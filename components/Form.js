@@ -76,7 +76,7 @@ export default function Form() {
               <div className="col-span-6">
                 <label
                   htmlFor="first-name"
-                  className="block dark:text-white text-sm font-medium text-gray-700 dark:text-white"
+                  className="block  text-sm font-medium text-gray-700 dark:text-white"
                 >
                   First name
                 </label>
