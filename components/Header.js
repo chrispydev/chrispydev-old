@@ -88,11 +88,11 @@ export default function Header() {
             </div>
           ))}
         </ul>
-        {toggleDark ? (
+        {!toggleDark ? (
           <svg
             onClick={() => setDark()}
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7 cursor-pointer bg-secondary dark:bg-gray-500 text-white rounded-sm border-secondary dark:border-gray-500 border-[1px]"
+            className="h-7 w-7 cursor-pointer bg-secondary dark:bg-gray-500 p-1 text-white rounded-md border-secondary dark:border-gray-500 border-[1px]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -108,7 +108,7 @@ export default function Header() {
           <svg
             onClick={() => setDark()}
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7 cursor-pointer bg-secondary dark:bg-gray-500 text-white rounded-sm border-secondary dark:border-gray-500 border-[1px]"
+            className="h-7 w-7 cursor-pointer bg-secondary dark:bg-gray-500 p-1 text-white rounded-md border-secondary dark:border-gray-500 border-[1px]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
