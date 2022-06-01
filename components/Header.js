@@ -8,6 +8,7 @@ export default function Header() {
   const [value, setValue] = useState("");
   const [toggle, setToggle] = useState(false);
   const [show, setShow] = useState(false);
+  const [toggleDark, setToggleDark] = useState();
 
   useEffect(() => {
     if (
@@ -16,8 +17,10 @@ export default function Header() {
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
       document.documentElement.classList.add("dark");
+      setToggleDark(true);
     } else {
       document.documentElement.classList.remove("dark");
+      setToggleDark(false);
     }
 
     window.onscroll = () => {
@@ -85,15 +88,11 @@ export default function Header() {
             </div>
           ))}
         </ul>
-        <div className="flex justify-between items-center z-50">
-          <label className="switch mr-4 cursor-pointer">
-            <input type="checkbox" checked={toggle} onClick={() => setDark()} />
-            <span className="slider round"></span>
-          </label>
+        {toggleDark ? (
           <svg
-            onClick={() => setShow(!show)}
+            onClick={() => setDark()}
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 block lg:hidden dark:text-gray-500 cursor-pointer border-secondary dark:border-gray-500 border-2"
+            className="h-7 w-7 cursor-pointer bg-secondary dark:bg-gray-500 text-white rounded-sm border-secondary dark:border-gray-500 border-[1px]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -102,10 +101,47 @@ export default function Header() {
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
+              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
             />
           </svg>
-        </div>
+        ) : (
+          <svg
+            onClick={() => setDark()}
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-7 w-7 cursor-pointer bg-secondary dark:bg-gray-500 text-white rounded-sm border-secondary dark:border-gray-500 border-[1px]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+            />
+          </svg>
+        )}
+
+        {/*
+          <label className="switch mr-4 cursor-pointer">
+            <input type="checkbox" checked={toggle} onClick={() => setDark()} />
+            <span className="slider round"></span>
+          </label>*/}
+        <svg
+          onClick={() => setShow(!show)}
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6 block lg:hidden dark:text-gray-500 cursor-pointer border-secondary dark:border-gray-500 border-2"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
       </nav>
       {show && (
         <div className="absolute right-0 z-50 bg-primary dark:bg-darker px-6">
