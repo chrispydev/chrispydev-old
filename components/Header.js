@@ -43,7 +43,7 @@ export default function Header() {
   }
 
   return (
-    <header className="dark:bg-darker opacity-100 md:sticky static top-0 left-0 z-20 w-full pt-2 md:pt-1 lg:pt-0 px-1 md:px-10 bg-primary text-secondary">
+    <header className="dark:bg-darker opacity-100 md:sticky static top-0 left-0 z-50 w-full pt-2 md:pt-1 lg:pt-0 px-1 md:px-10 bg-primary text-secondary">
       {value > 500 && (
         <>
           <div
@@ -85,15 +85,15 @@ export default function Header() {
             </div>
           ))}
         </ul>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center z-50">
           <label className="switch mr-4 cursor-pointer">
             <input type="checkbox" checked={toggle} onClick={() => setDark()} />
-            <span class="slider round"></span>
+            <span className="slider round"></span>
           </label>
           <svg
             onClick={() => setShow(!show)}
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 block lg:hidden cursor-pointer border-secondary border-2"
+            className="h-6 w-6 block lg:hidden dark:text-gray-500 cursor-pointer border-secondary dark:border-gray-500 border-2"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -108,7 +108,7 @@ export default function Header() {
         </div>
       </nav>
       {show && (
-        <div className="absolute right-0 z-50 bg-primary px-5">
+        <div className="absolute right-0 z-50 bg-primary dark:bg-darker px-6">
           <DropDown setShow={() => setShow(false)} />
         </div>
       )}

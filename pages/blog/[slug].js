@@ -7,12 +7,12 @@ import Heading from "../../components/Heading";
 
 export default function PostPage({
   frontmatter: { title, date, cover_image },
-  slug,
+  // slug,
   content,
 }) {
   return (
-    <>
-      <main className="lg:max-w-[70%] mx-auto">
+    <div className="dark:bg-darker dark:text-white">
+      <main className="lg:max-w-[70%] mx-auto dark:text-white">
         <div className="py-3 px-5 lg:p-4">
           {/* <Image
             height={550}
@@ -25,7 +25,7 @@ export default function PostPage({
           <div className="-mt-36 -mb-36 md:-mb-0 md:-mt-0">
             <img
               loading="lazy"
-              className="w-full h-[500px] object-contain"
+              className="w-full h-[500px] object-contain -z-10"
               src={cover_image}
               alt={title}
             />
@@ -34,18 +34,18 @@ export default function PostPage({
             <Heading small headingText={title} />
           </div>
 
-          <small className="text-xs bg-secondary p-1 rounded">
+          <small className="text-xs bg-secondary dark:bg-dark dark:text-light p-1 rounded">
             Posted on {date}
           </small>
           <div className="post-body">
             <div
-              className="post-wrapper"
+              className="post-wrapper dark:post-dark"
               dangerouslySetInnerHTML={{ __html: marked(content) }}
             ></div>
           </div>
         </div>
       </main>
-    </>
+    </div>
   );
 }
 

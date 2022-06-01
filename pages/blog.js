@@ -7,11 +7,13 @@ import { sortByDate } from "../lib";
 
 export default function blog({ posts }) {
   return (
-    <main className="lg:max-w-[70%] mx-auto p-2">
-      {posts.map((post, index) => (
-        <Post key={index} post={post} />
-      ))}
-    </main>
+    <div className="dark:bg-darker h-screen dark:text-white">
+      <main className="lg:max-w-[70%] mx-auto p-2">
+        {posts.map((post, index) => (
+          <Post key={index} post={post} />
+        ))}
+      </main>
+    </div>
   );
 }
 

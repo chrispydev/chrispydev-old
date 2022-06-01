@@ -76,7 +76,7 @@ export default function Form() {
               <div className="col-span-6">
                 <label
                   htmlFor="first-name"
-                  className="block text-sm font-medium text-gray-700 dark:text-white"
+                  className="block dark:text-white text-sm font-medium text-gray-700 dark:text-white"
                 >
                   First name
                 </label>
@@ -90,14 +90,14 @@ export default function Form() {
                   name="first-name"
                   id="first-name"
                   autoComplete="given-name"
-                  className="mt-1 dark:border-white dark:border-[1px] focus:ring-secondary focus:border-secondary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                  className="mt-1 dark:text-white dark:border-dark dark:border-[1px] focus:ring-secondary focus:border-secondary dark:focus:ring-dark dark:focus:border-dark dark:bg-gray-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
 
               <div className="col-span-6">
                 <label
                   htmlFor="last-name"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block dark:text-white text-sm font-medium text-gray-700"
                 >
                   Last name
                 </label>
@@ -111,14 +111,14 @@ export default function Form() {
                   name="last-name"
                   id="last-name"
                   autoComplete="family-name"
-                  className="mt-1 focus:ring-secondary focus:border-secondary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                  className="mt-1 dark:text-white dark:border-dark dark:border-[1px] focus:ring-secondary focus:border-secondary dark:focus:ring-dark dark:focus:border-dark dark:bg-gray-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
 
               <div className="col-span-6">
                 <label
                   htmlFor="email-address"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block dark:text-white text-sm font-medium text-gray-700"
                 >
                   Email address
                 </label>
@@ -132,14 +132,14 @@ export default function Form() {
                   name="email-address"
                   id="email-address"
                   autoComplete="email"
-                  className="mt-1 focus:ring-secondary focus:border-secondary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                  className="mt-1 dark:text-white dark:border-dark dark:border-[1px] focus:ring-secondary focus:border-secondary dark:focus:ring-dark dark:focus:border-dark dark:bg-gray-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
               <div className="col-span-6">
                 <div className="flex justify-between items-center">
                   <label
                     htmlFor="phone-number"
-                    className="block text-sm font-medium text-gray-700"
+                    className="block dark:text-white text-sm font-medium text-gray-700"
                   >
                     Phone Number
                   </label>
@@ -160,13 +160,13 @@ export default function Form() {
                   name="subject"
                   id="phone-number"
                   autoComplete="email"
-                  className="mt-1 focus:ring-secondary focus:border-secondary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                  className="mt-1 dark:text-white dark:border-dark dark:border-[1px] focus:ring-secondary focus:border-secondary dark:focus:ring-dark dark:focus:border-dark dark:bg-gray-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
               <div className="col-span-12">
                 <label
                   htmlFor="subject"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block dark:text-white text-sm font-medium text-gray-700"
                 >
                   Subject
                 </label>
@@ -180,7 +180,7 @@ export default function Form() {
                   name="subject"
                   id="subject"
                   autoComplete="email"
-                  className="mt-1 focus:ring-secondary focus:border-secondary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                  className="mt-1 dark:text-white dark:border-dark dark:border-[1px] focus:ring-secondary focus:border-secondary dark:focus:ring-dark dark:focus:border-dark dark:bg-gray-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                 />
               </div>
 
@@ -193,7 +193,7 @@ export default function Form() {
                   id="about"
                   name="about"
                   rows={3}
-                  className="shadow-sm focus:ring-secondary focus:border-secondary mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
+                  className="shadow-sm dark:text-white dark:border-dark dark:border-[1px] focus:ring-secondary focus:border-secondary mt-1 block w-full sm:text-sm border dark:focus:ring-dark dark:focus:border-dark dark:bg-gray-500 border-gray-300 rounded-md"
                 // placeholder='Enter your message'
                 // defaultValue={''}
                 />
@@ -212,7 +212,7 @@ export default function Form() {
               }
               onClick={(e) => sendMail(e)}
               type="submit"
-              className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-secondary hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+              className="inline-flex dark:text-white dark:bg-dark justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-secondary hover:opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
             >
               Send Message
             </button>

@@ -1,8 +1,12 @@
 .post-wrapper {
   line-height: 2rem;
-  color: #222;
+  /* color: #222; */
   font-size: 1rem;
   margin: 1rem;
+}
+
+.post-dark p {
+  color: #fff !important;
 }
 
 @media (max-width: 480px) {

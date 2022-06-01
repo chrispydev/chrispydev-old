@@ -2,11 +2,11 @@
 
 export default function Footer() {
   return (
-    <section className="mt-16 mx-auto bg-primary p-5 text-white text-center space-y-5">
+    <section className="pt-16 dark:bg-darker dark:text-white mx-auto bg-primary p-5 text-white text-center space-y-5">
       <p>I am available, need a project?</p>
       <p className="pb-5">
         email me{" "}
-        <small className="bg-secondary p-1 rounded-full text-primary font-extrabold">
+        <small className="bg-secondary dark:text-white dark:bg-dark p-1 rounded-full text-primary font-extrabold">
           CO
         </small>
       </p>

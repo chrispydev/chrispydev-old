@@ -3,7 +3,7 @@ import Heading from "./Heading";
 
 export default function ContactMe() {
   return (
-    <section className="pt-16 dark:bg-darker" id="contactMe">
+    <section className="pt-16 dark:px-16 dark:bg-darker" id="contactMe">
       <div className="w-full flex justify-center items-center">
         <Heading headingText="Get In Touch" />
       </div>

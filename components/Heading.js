@@ -4,7 +4,7 @@ export default function Heading({ headingText, center, small }) {
       <h1
         className={
           small
-            ? `font-lobsterTwo font-black capitalize text-primary bg-secondary transform -skew-x-6 p-2 tracking-wider text-xl md:text-2xl`
+            ? `font-lobsterTwo font-black capitalize text-primary dark:bg-dark dark:text-white  bg-secondary transform -skew-x-6 p-2 tracking-wider text-xl md:text-2xl`
             : `font-lobsterTwo text-4xl font-black capitalize text-primary bg-secondary dark:text-white dark:bg-dark transform -skew-x-6 p-2 tracking-wider`
         }
       >
