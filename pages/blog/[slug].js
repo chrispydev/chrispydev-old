@@ -22,10 +22,10 @@ export default function PostPage({
             src={cover_image}
             alt={title}
           /> */}
-          <div className="-mt-36 -mb-36 md:-mb-0 md:-mt-0">
+          <div className="">
             <img
               loading="lazy"
-              className="w-full h-[500px] object-contain -z-10"
+              className="w-full lg:h-[500px] object-cover lg:object-contain"
               src={cover_image}
               alt={title}
             />
