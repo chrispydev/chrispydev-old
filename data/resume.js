@@ -1,7 +1,7 @@
 export const resume = [
   {
     rank: "Full-Stack Developer",
-    year: "2020 - 2021",
+    year: "2020 - now",
     body: "I Worked to solve complex problems using the latest cutting edge Technologies in Cloud, Mobile, and Web Technologies",
   },
   {
@@ -11,7 +11,7 @@ export const resume = [
   },
   {
     rank: "Frontend-end Developer",
-    year: "2018 - 2019",
+    year: "2017 - 2018",
     body: "I offered all aspects of designs and development, and offered design solutions when necessary.",
   },
 ];
