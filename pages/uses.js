@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Heading from '../components/Heading';
 import HighlightText from '../components/HighlightText';
 
-import usesBanner from '../public/images/uses/banner.jpg';
+// import usesBanner from '../public/images/uses/banner.jpg';
 
 export default function uses() {
   return (

@@ -1,8 +1,8 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import { useState } from 'react';
 import useProgressBar from '../Hooks/useProgressBar';
 import ProgressBar from './ProgressBar';
-import aboutImage from '../public/images/about.jpg';
+// import aboutImage from '../public/images/about.jpg';
 
 export default function About() {
   const python = useProgressBar(98);
