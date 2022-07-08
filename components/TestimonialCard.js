@@ -1,4 +1,4 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 
 export default function TestimonialCard({
   name,
@@ -10,13 +10,13 @@ export default function TestimonialCard({
   return (
     <div className='shadow-lg dark:shadow-none dark:border-white dark:border-[1px] p-5 m-3 text-center'>
       <div className='w-full flex justify-start items-center space-x-4'>
-        {/* <Image
-          className="w-14 h-14 rounded-full"
+        <Image
+          className='w-14 h-14 rounded-full'
           src={image}
           width={56}
           height={56}
-        /> */}
-        <img className='w-14 h-14 rounded-full' src={image} />
+        />
+        {/* <img className='w-14 h-14 rounded-full' src={image} /> */}
         <h5 className='font-semibold'>{name}</h5>
       </div>
       <div className='my-2 flex'>

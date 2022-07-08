@@ -7,7 +7,6 @@
     "dev": "next -p 7771",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
     "lint": "next lint"
   },
   "author": "Christian Owusu",

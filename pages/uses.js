@@ -1,25 +1,20 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 
 import Heading from '../components/Heading';
 import HighlightText from '../components/HighlightText';
 
-// import usesBanner from '../public/images/uses/banner.jpg';
+import usesBanner from '../public/images/uses/banner.jpg';
 
 export default function uses() {
   return (
     <div className='dark:bg-darker'>
       <main className='lg:max-w-[80%] mx-auto p-2 dark:text-white'>
         <div className='p-4'>
-          {/* <Image
+          <Image
             height={550}
-            objectFit="cover"
+            objectFit='cover'
             src={usesBanner}
-            alt="user-banner"
-          /> */}
-          <img
-            src='/images/uses/banner.jpg'
             alt='user-banner'
-            className='h-[200px] md:h-[550px] w-full object-cover'
           />
           <div className='mt-7'>
             <div className='w-full flex justify-start items-center'>

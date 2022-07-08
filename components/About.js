@@ -1,8 +1,8 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 import { useState } from 'react';
 import useProgressBar from '../Hooks/useProgressBar';
 import ProgressBar from './ProgressBar';
-// import aboutImage from '../public/images/about.jpg';
+import aboutImage from '../public/images/about.jpg';
 
 export default function About() {
   const python = useProgressBar(98);
@@ -30,16 +30,16 @@ export default function About() {
     <section className='dark:bg-darker dark:text-white pt-16' id='about'>
       <div className='mx-5  lg:mx-10 flex flex-col lg:flex-row justify-between space-x-6'>
         <div className='w-full lg:w-1/4'>
-          {/* <Image
+          <Image
             src={aboutImage}
-            alt="about"
-            className="filter grayscale object-contain rounded-3xl"
-          /> */}
-          <img
+            alt='about'
+            className='filter grayscale object-contain rounded-3xl'
+          />
+          {/* <img
             src='/images/about.jpg'
             alt='about'
             className='filter grayscale object-contain'
-          />
+          /> */}
         </div>
         <div className='flex-1 pt-4 space-y-2'>
           <h1 className='text-bold capitalize text-3xl font-bold pb-2'>
