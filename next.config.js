@@ -1,4 +1,4 @@
-
 module.exports = {
-  distDir: 'out',
-}
+  distDir: "out",
+  target: "serverless",
+};
